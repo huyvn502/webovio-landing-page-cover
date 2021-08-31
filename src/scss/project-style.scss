@@ -1,0 +1,93 @@
+#project-container {
+    margin-bottom: 7.65%;
+    #project-header {
+        width: 67%;
+        display: flex;
+        margin: 10.4% auto 8% auto;
+        justify-content: space-between;
+        h1 {
+            width: 40%;
+            font-weight: 400;
+            color: #4D533C;
+        }
+        p {
+            width: 53%;
+        }
+    }
+    .project {
+        width: 90%;
+        display: flex;
+        margin-bottom: 7%;
+        
+        .project-view {
+            position: relative;
+            width: 60%;
+            img {
+                opacity: 0;
+                width: 0%;
+                z-index: 1;
+                margin-bottom: 8.85%;
+            }
+            .client-comment {
+                opacity: 0;
+                width: 58.45%;
+                position: absolute;
+                bottom: -20%;
+                right: 0;
+                z-index: 2;
+                background-color: white;
+                padding: 5%;
+                border-radius: 10px;
+                box-shadow: 20px 20px 40px 1px rgba(0, 0, 0, 0.15);
+                p {
+                    margin: 0;
+                }
+                .author-box {
+                    width: 80%;
+                    margin-top: 5.3%;
+                }
+            }
+        }
+        .project-content {
+            opacity: 0;
+            width: 40%;
+            padding: 4%;
+            .paragraph-link {
+                margin-top: 18.2%;
+            }
+            h1 {
+                font-weight: 400;
+                color: #4D533C;
+            }
+        }
+        &.is-displayed {
+            .project-view {
+                img {
+                    opacity: 1;
+                    width: 95%;
+                    transition: 0.8s ease;
+                }
+                .client-comment {
+                    opacity: 1;
+                    bottom: 0;
+                    transition: 0.5s ease 0.5s;
+                }
+            }
+            .project-content {
+                opacity: 1;
+                transition: 1s ease 0.4s;
+            }
+        }
+    }
+    .project-right {
+        float: right;
+        .project-view {
+            img {
+                float: right;
+            }
+            .client-comment {
+                left: 0;
+            }
+        }
+    }
+}

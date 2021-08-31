@@ -1,0 +1,95 @@
+#footer {
+    background-color: #4F553D;
+    #head-footer {
+        width: 100%;
+        height: 30vh;
+        background: rgba(0, 0, 0, 0.1);
+        opacity: 0.7;
+        z-index: -1;
+    }
+    #content-footer {
+        width: 77%;
+        margin: auto;
+        #main-contact {
+            margin: 6.5% 0;
+            display: flex;
+            div {
+                width: 21%;
+            }
+        }
+        hr {
+            opacity: 0.2;
+        }
+        #references {
+            display: flex;
+            padding: 6.5% 0;
+            justify-content: space-between;
+            #reference-content {
+                width: 61%;
+                display: flex;
+                justify-content: space-between;
+                div {
+                    width: 30%;
+                }
+                p {
+                    margin-bottom: 10%;
+                }
+                a {
+                    display: block;
+                    text-decoration: none;
+                    margin: 5% 0;
+                }
+                a:hover {
+                    display: block;
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+            #email {
+                width: 30%;
+                h3 {
+                    font-weight: 400;
+                    color: white;
+                    font-size: 1.25rem;
+                }
+                i {
+                    color: #B6C197;
+                    background-color: #444A34;
+                    font-size: 1.5rem;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    padding: 10px;
+                }
+                .fa-linkedin-in {
+                    padding: 10px 12px;
+                }
+                .fa-facebook-f, .fa-tumblr {
+                    padding: 10px 15px;
+                }
+                i:hover {
+                    cursor: pointer;
+                    background-color: #FFD723;
+                    color: #444A34;
+                    transition: background-color 0.5s ease 0.1s;
+                }
+            }
+        }
+        #bottom-footer {
+            padding: 2.1% 0;
+            img {
+                width: 18%;
+                height: auto;
+            }
+            p {
+                font-size: 14px;
+                float: right;
+            }
+        }
+    }
+    .white-text {
+        color: white;
+    }
+    .color-text {
+        color: #B6C197;
+    }
+}

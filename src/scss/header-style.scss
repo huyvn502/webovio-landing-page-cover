@@ -1,0 +1,24 @@
+#header {
+    width: 42.7%;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 3%;
+    left: 11.5%;
+    .small-paragraph {
+        color: white;
+    }
+    h1 {
+        font-size: 3.25rem;
+        font-weight: 700;
+        margin: 4% 0 13% 0;
+    }
+    .paragraph-link {
+        margin-top: 7.3%;
+    }
+    .paragraph-link:hover {
+        cursor: pointer;
+        transform: scale(1.2, 1.2);
+        transition: transform 0.5s ease 0.1s;
+    }
+}

@@ -1,0 +1,228 @@
+#navigation {
+    overflow: hidden;
+}
+.navigation-bar {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5% 11.5%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.8s ease;
+    .hamburger-btn {
+        width: 45px;
+        height: 45px;
+        background-color: white;
+        
+        border-radius: 50%;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .hamburger-container {
+            position: relative;
+            @mixin hamburger-bar-shape {
+                width: 1.4rem;
+                height: 0.25rem;
+                background-color: #4d533c;
+                border-radius: 5px;
+            }
+            .hamburger-bar {
+                @include hamburger-bar-shape;
+                margin: auto;
+                transition: 0.5s ease 0.2s;
+                &::before {
+                    content: "";
+                    @include hamburger-bar-shape;
+                    position: absolute;
+                    top: -0.5rem;
+                    left: 0;
+                    transition: 0.3s ease 0.2s;
+                }
+                &::after {
+                    content: "";
+                    @include hamburger-bar-shape;
+                    position: absolute;
+                    top: 0.5rem;
+                    left: 0;
+                    transition: 0.3s ease 0.2s;
+                }
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px 0 5px rgba(0, 0, 0, 0.3);
+            transform: scale(1.1, 1.1);
+            transition: box-shadow 0.5s ease 0.1s, transform 0.5s ease 0.1s;
+        }
+
+        &.is-active {
+            background-color: #4d533c;
+            transition: 0.5s ease 0.2s;
+            .hamburger-container {
+                .hamburger-bar {
+                    background-color: white;
+                }
+                .hamburger-bar::before {
+                    left: 0.2rem;
+                    background-color: white;
+                }
+                .hamburger-bar::after {
+                    left: -0.2rem;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    &.background-navigation-bar {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+.menu-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgba(77, 83, 60, 1);
+    padding: 0 10%;
+
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    z-index: 17;
+    
+    .preview {
+        width: 35%;
+        &::after {
+            content: "";
+            width: 35%;
+            height: 55%;
+            background-color: rgba(77, 83, 60, 1);
+            
+            z-index: 6;
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            transition: left 0.8s;
+        }
+        &.is-hover {
+            &::after {
+                animation: preview-slide 0.7s ease forwards;
+            }
+        }
+        img {
+            height: auto;
+        }
+        .contact-preview {
+            position: absolute;
+            top: 20%;
+            display: none;
+            font-size: 1.5rem;
+            .color-text {
+                font-weight: 700;
+            }
+            div {
+                padding: 5% 0;
+            }
+            &.is-hover {
+                display: block;
+            }
+        }
+        .service-preview {
+            position: absolute;
+            top: 25%;
+            display: none;
+            h1 {
+                margin: 6% 0;
+                font-weight: 400;
+            }
+            &.is-hover {
+                display: block;
+            }
+        }
+        @mixin img-preview-display {
+            position: absolute;
+            top: 25%;
+            width: 35%;
+            display: none;
+            &.is-hover {
+                display: block;
+            }
+        }
+        .project-preview {
+            @include img-preview-display();
+        }
+        .evaluation-preview {
+            @include img-preview-display();
+        }
+        .more-preview {
+            @include img-preview-display();
+        }
+    }
+    .nav-container {
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+        a {
+            display: block;
+            text-align: right;
+            margin: 5% 0;
+            padding: 1% 0;
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            position: relative;
+            &::before {
+                width: 100%;
+                height: 3rem;
+                content: "";
+                display: inline-block;
+                margin: 5% 0;
+                padding: 2% 0;
+                font-size: 2.25rem;
+                background-color: rgba(255,255,255, 1);
+                position: absolute;
+                left: 0;
+                top: -40%;
+                transition: width 0.3s ease;
+            }
+            &:hover {
+                color: #FFD723;
+                transition: 0.5s ease 0.2s;
+            }
+
+            &.is-active {
+                &::before {
+                    width: 0;
+                    transition: width 0.3s ease;
+                }
+            }
+
+        }
+    }
+    &.close-menu {
+        left: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #navigation .menu-nav {
+        justify-content: center;
+        .preview {
+            display: none;
+        }
+        .nav-container a {
+            text-align: center;
+        }
+    }
+}
+
+@keyframes preview-slide {
+    from {left: 10%}
+    to {left: -26%;}
+}

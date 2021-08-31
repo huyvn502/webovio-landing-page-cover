@@ -1,0 +1,17 @@
+#clients {
+    width: 88.6%;
+    margin: -7% auto 0 auto;
+    padding: 4.5%;
+    border-radius: 5px;
+    box-shadow: 25px 25px 40px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    position: relative;
+    background-color: white;
+    img {
+        width: 12.25%;
+        opacity: 0.63;
+        margin: 0 2.625%;
+    }
+}

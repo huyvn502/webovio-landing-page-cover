@@ -1,0 +1,41 @@
+#services {
+    position: relative;
+    width: 77%;
+    margin: 0 auto 10.5% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    #service-content {
+        width: 40%;
+        opacity: 0;
+        h1 {
+            font-weight: 400;
+            color: #4D533C;
+        }
+    }
+    #CEO-comment {
+        padding: 0 2% 5% 5%;
+        width: 42.75%;
+        opacity: 0;
+        h3 {
+            font-weight: 300;
+            margin: 30% 0 25% 0;
+            font-size: 1.2rem;
+            color: #4D533C;
+        }
+        box-shadow: none;
+    }
+    &.is-displayed {
+        #service-content {
+            opacity: 1;
+            transition: 0.8s ease 0.2s;
+        }
+        #CEO-comment {
+            opacity: 1;
+            box-shadow: 0 50px 80px 20px rgba(0, 0, 0, 0.15);
+            transition: opacity 0.8s ease 0.2s, box-shadow 0.5s ease 0.5s;
+        }
+    }
+}
+
+
