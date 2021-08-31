@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/webovio-landing-page-cover/static/css/main.9bd422f3.chunk.css",
+    "main.js": "/webovio-landing-page-cover/static/js/main.326682e2.chunk.js",
+    "main.js.map": "/webovio-landing-page-cover/static/js/main.326682e2.chunk.js.map",
+    "runtime-main.js": "/webovio-landing-page-cover/static/js/runtime-main.fdee66ab.js",
+    "runtime-main.js.map": "/webovio-landing-page-cover/static/js/runtime-main.fdee66ab.js.map",
+    "static/js/2.45cd7965.chunk.js": "/webovio-landing-page-cover/static/js/2.45cd7965.chunk.js",
+    "static/js/2.45cd7965.chunk.js.map": "/webovio-landing-page-cover/static/js/2.45cd7965.chunk.js.map",
+    "static/js/3.6c18e3c8.chunk.js": "/webovio-landing-page-cover/static/js/3.6c18e3c8.chunk.js",
+    "static/js/3.6c18e3c8.chunk.js.map": "/webovio-landing-page-cover/static/js/3.6c18e3c8.chunk.js.map",
+    "index.html": "/webovio-landing-page-cover/index.html",
+    "static/css/main.9bd422f3.chunk.css.map": "/webovio-landing-page-cover/static/css/main.9bd422f3.chunk.css.map",
+    "static/js/2.45cd7965.chunk.js.LICENSE.txt": "/webovio-landing-page-cover/static/js/2.45cd7965.chunk.js.LICENSE.txt",
+    "static/media/GenevieveRodriquez-Avatar.12371593.png": "/webovio-landing-page-cover/static/media/GenevieveRodriquez-Avatar.12371593.png",
+    "static/media/PLA-logo.659719c7.png": "/webovio-landing-page-cover/static/media/PLA-logo.659719c7.png",
+    "static/media/header-background.e82861c9.png": "/webovio-landing-page-cover/static/media/header-background.e82861c9.png",
+    "static/media/leadership-logo.e9150a40.png": "/webovio-landing-page-cover/static/media/leadership-logo.e9150a40.png",
+    "static/media/project1.a3093481.png": "/webovio-landing-page-cover/static/media/project1.a3093481.png",
+    "static/media/project2.c3bf52d4.png": "/webovio-landing-page-cover/static/media/project2.c3bf52d4.png",
+    "static/media/project3.c57cf0fe.png": "/webovio-landing-page-cover/static/media/project3.c57cf0fe.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fdee66ab.js",
+    "static/js/2.45cd7965.chunk.js",
+    "static/css/main.9bd422f3.chunk.css",
+    "static/js/main.326682e2.chunk.js"
+  ]
+}
